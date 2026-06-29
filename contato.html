@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato — Seu Nome</title>
+    <meta name="description" content="Entre em contato com Seu Nome." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">&lt;/&gt; <span>Jaison</span></a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html">Sobre mim</a>
+          <a href="formacao.html">Formação</a>
+          <a href="portfolio.html">Portfólio</a>
+          <a href="contato.html" class="active">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema claro/escuro"
+            title="Alternar tema"
+          >
+            🌙
+          </button>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-subtitle">
+          Tem uma vaga, um projeto ou só quer trocar uma ideia? Me envie uma
+          mensagem.
+        </p>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <h3>Outros canais</h3>
+            <p>Você também pode me encontrar diretamente nestes canais:</p>
+            <div class="social-links">
+              <a href="mailto:seu.email@exemplo.com">jaison.odss@gmail.com </a>
+              <a
+                href="https://github.com/seu-usuario"
+                target="_blank"
+                rel="noopener"
+                >github.com/JaisonBit</a
+              >
+            </div>
+          </div>
+
+          <form class="card" id="contact-form" novalidate>
+            <div class="form-group" id="group-nome">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+              />
+              <span class="form-error" id="error-nome"></span>
+            </div>
+
+            <div class="form-group" id="group-email">
+              <label for="email">E-mail</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="usuario@dominio.com"
+              />
+              <span class="form-error" id="error-email"></span>
+            </div>
+
+            <div class="form-group" id="group-mensagem">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+              <span class="form-error" id="error-mensagem"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast" id="toast">
+      ✅ <span id="toast-message">Mensagem enviada com sucesso!</span>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
+        <div class="social-icons">
+          <a href="https://github.com/JaisonBit" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Seu Nome</title>
+    <meta
+      name="description"
+      content="Projetos práticos desenvolvidos por Seu Nome."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">&lt;/&gt; <span>Jaison</span></a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="index.html">Sobre mim</a>
+          <a href="formacao.html">Formação</a>
+          <a href="portfolio.html" class="active">Portfólio</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema claro/escuro"
+            title="Alternar tema"
+          >
+            🌙
+          </button>
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Portfólio</h2>
+        <p class="section-subtitle">
+          Projetos práticos que venho construindo enquanto estudo
+          desenvolvimento web e mobile.
+        </p>
+
+        <div class="project-grid">
+          x
+
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true"></div>
+            <h3>App de Previsão do Tempo</h3>
+            <p>
+              Consumo de uma API pública de clima (Open-Meteo), com busca por
+              cidade, tratamento de erros e exibição da temperatura e condição
+              atual.
+            </p>
+            <div class="tag-list">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Fetch API</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <a
+              href="https://github.com/JaisonBit/Projeto-previsao-do--tempo.git"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+              >Ver repositório →</a
+            >
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true"></div>
+            <h3>Lista de Tarefas (To-Do List)</h3>
+            <p>
+              Aplicação com CRUD completo (criar, marcar como concluída e
+              remover tarefas), com os dados salvos no navegador via
+              localStorage.
+            </p>
+            <div class="tag-list">
+              <span class="tag">JavaScript</span>
+              <span class="tag">localStorage</span>
+              <span class="tag">CRUD</span>
+            </div>
+            <a
+              href="https://github.com/JaisonBit/Projeto-lista-de-tarefas.git"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+              >Ver repositório →</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
